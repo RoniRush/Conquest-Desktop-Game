@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="popUpBack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXUI.TopInfo.TopControllers.ReplayController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="664.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="516.0">
+               <children>
+                  <Button id="popButton" fx:id="close" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#closeOnAction" prefHeight="25.0" prefWidth="61.0" text="Close" />
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="509.0" spacing="40.0">
+               <children>
+                  <Button id="popButton" fx:id="prev" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#prevOnAction" prefHeight="25.0" prefWidth="61.0" text="Previous" />
+                  <Button id="popButton" fx:id="next" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#nextOnAction" prefHeight="25.0" prefWidth="61.0" text="Next" />
+               </children>
+               <padding>
+                  <Insets right="40.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ScrollPane fx:id="boardScroll" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </ScrollPane>
+   </center>
+   <right>
+      <VBox prefHeight="520.0" prefWidth="274.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="playerGrid" prefHeight="521.0" prefWidth="273.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="player1Name" styleClass="popLabel" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="player2Name" styleClass="popLabel" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                  <Label fx:id="player3Name" styleClass="popLabel" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <Label fx:id="player4Name" styleClass="popLabel" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <Separator fx:id="sep00" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.valignment="BOTTOM" />
+                  <Separator fx:id="sep01" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <Separator fx:id="sep10" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+                  <Separator fx:id="sep02" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <Separator fx:id="sep12" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <Separator fx:id="sep11" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <ImageView fx:id="p1Img" fitHeight="68.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" />
+                  <ImageView fx:id="p2Img" fitHeight="68.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <ImageView fx:id="p4Img" fitHeight="68.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <ImageView fx:id="p3Img" fitHeight="68.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

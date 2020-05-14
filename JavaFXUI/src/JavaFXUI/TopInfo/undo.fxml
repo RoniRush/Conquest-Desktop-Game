@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="popUpBack" fx:id="undoBoarderPane" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXUI.TopInfo.TopControllers.undoController">
+   <top>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="139.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="popLabel" text="UNDO" />
+            <Label fx:id="label1" styleClass="popLabel" text="Since I'm a magical princess I can use my powers to help" />
+            <Label fx:id="label2" styleClass="popLabel" text="And erase rounds all the way back to the start, one round at a time" />
+            <Label fx:id="label3" styleClass="popLabel" text="Would you like me to turn back time?" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </top>
+   <center>
+      <ImageView fx:id="image" fitHeight="178.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="TOP_CENTER" prefHeight="68.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="popLabel" text="Are You Sure?" />
+            <Button id="popButton" fx:id="yesButton" mnemonicParsing="false" onAction="#yesOnAction" text="YES" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

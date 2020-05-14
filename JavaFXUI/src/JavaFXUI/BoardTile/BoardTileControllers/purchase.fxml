@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="570.0" styleClass="popScroll" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXUI.BoardTile.BoardTileControllers.PurchaseController">
+   <content>
+      <VBox prefHeight="468.0" prefWidth="334.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="91.0" prefWidth="486.0">
+               <children>
+                  <Label styleClass="popLabel" text="Select the number of units from each type" />
+               </children>
+            </HBox>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="392.0" prefWidth="338.0" styleClass="popScroll">
+               <content>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="359.0" prefWidth="543.0">
+                           <children>
+                              <GridPane fx:id="shopGrid" gridLinesVisible="true" layoutX="1.0" layoutY="26.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="135.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="135.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="135.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="135.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label styleClass="popLabel" text="TYPE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label styleClass="popLabel" text="MAX FIRE POWER" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <Label styleClass="popLabel" text="PRICE PER UNIT" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                                       <children>
+                                          <Label styleClass="popLabel" text="AMOUNT TO BUY" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" prefHeight="81.0" prefWidth="486.0" spacing="5.0">
+               <children>
+                  <Button id="popButton" fx:id="buy" mnemonicParsing="false" onAction="#buyOnAction" prefHeight="25.0" prefWidth="82.0" text="BUY" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

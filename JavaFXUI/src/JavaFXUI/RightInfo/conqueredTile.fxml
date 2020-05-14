@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="singleUnitBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="94.0" prefWidth="208.0" spacing="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXUI.ConqueredTile.ConqueredTileController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <Label text="Type:" />
+            <Label text="HP/Max:" />
+            <Label text="Fatigue Factor:" />
+         </children>
+         <HBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="74.0" prefWidth="82.0" spacing="5.0">
+         <children>
+            <Label fx:id="typeLabel" />
+            <Label fx:id="hpLabel" />
+            <Label fx:id="fatigueLabel" />
+         </children>
+         <HBox.margin>
+            <Insets right="10.0" top="10.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</HBox>
