@@ -15,6 +15,11 @@ He must choose which army he wants to assemble, as well as which territories he 
 The game ends when several rounds are set as predefined.
 The winner, then, will be the competitor who controls at the end of the game in the amount of terrain cells that yields the maximum money.
 
+there are 3 available themes in the game:
+![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/theme1.png?raw=true)
+![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/theme2.png?raw=true)
+![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/theme3.png?raw=true)
+
 Possible actions and sections:
 1.	Load XML – load XML that include the relevant data for this game (you can find some XMLs this Github repository)
 2.	Load Saved File – after you start a game, you can save it and reload it here
@@ -33,6 +38,13 @@ Possible actions and sections:
 Tabs:
 1.	Players – you can see all players participating in the game
 And their current data (color on boars, id, and total money (Turing)
+![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/playersTab.png?raw=true)
+
 2.	Unit Shop – all the Units that are available in this game and their data (this data won’t change during the game and remain the same)
+![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/UnitShopTab.png?raw=true)
+
 3.	My Territories – you can see all your territories you conquered in this tab, only you can see it 
+![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/TerritoriesTab.png?raw=true)
+
 4.	Notifications – each turn the player get notification about money he got last round, army lose, territory lose and more  
+![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/NotificationsTab.png?raw=true)
