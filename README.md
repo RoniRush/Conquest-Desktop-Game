@@ -37,14 +37,18 @@ Possible actions and sections:
 
 Tabs:
 1.	Players – you can see all players participating in the game
-And their current data (color on boars, id, and total money (Turing)
+And their current data (color on boars, id, and total money-Turing)
+
 ![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/playersTab.png?raw=true)
 
 2.	Unit Shop – all the Units that are available in this game and their data (this data won’t change during the game and remain the same)
+
 ![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/UnitShopTab.png?raw=true)
 
 3.	My Territories – you can see all your territories you conquered in this tab, only you can see it 
+
 ![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/TerritoriesTab.png?raw=true)
 
-4.	Notifications – each turn the player get notification about money he got last round, army lose, territory lose and more  
+4.	Notifications – each turn the player get notification about money he got last round, army lose, territory lose and more
+
 ![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/NotificationsTab.png?raw=true)
