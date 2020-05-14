@@ -1,0 +1,104 @@
+.root{
+    -fx-background-color:    #FFDFEF;
+}
+
+#topBorder {
+    -fx-background-color:    #FFDFEF;
+}
+
+
+#tabRight{
+    -fx-background-color:   #FFDFEF;
+}
+
+Label{
+//-fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 12.5;
+}
+
+#playersGrid{
+    -fx-background-image: url("pinkTab.jpeg");
+    -fx-background-size: 362 600;
+}
+
+#scrollBoard{
+    -fx-background:  #FFDFEF;
+}
+
+
+#unitShopV{
+    -fx-background-image: url("pinkTab.jpeg");
+    -fx-background-size: 362 600;
+}
+
+
+#myTerritoriesV{
+    -fx-background-image: url("pinkTab.jpeg");
+    -fx-background-size: 362 600;
+}
+
+#notificationV{
+    -fx-background-image: url("pinkTab.jpeg");
+    -fx-background-size: 362 600;
+}
+
+
+Button {
+    -fx-background-color: #FF99CC;
+    -fx-border-color:  #FF66B2;
+    -fx-font-family:  "Comic Sans MS";
+    -fx-font-size: 12.5;
+    -fx-border-radius:  20 1 20 1;
+    -fx-background-radius:  20 1 20 1;
+    -fx-border-insets:0;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1);
+
+}
+
+.tab-header-background{
+    -fx-background-color:  #FFDFEF;
+}
+
+.tab:top
+{
+    -fx-background-color:  #FF99CC;
+    -fx-border-color:  #FF66B2;
+}
+
+Button:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%,  #FF99CC 0%,  #FF66B2 100%),
+            #EC7DB4,
+            #F065AB,
+            radial-gradient(center 50% 50%, radius 100%,  #FF99CC,  #FF66B2);
+}
+
+Button:pressed {
+    -fx-background-insets: 2 0 0 0, 2 0 1 0, 2 0 2 0, 2 0 3 0;
+}
+
+#popUpBack {
+    -fx-background-color:  #FFDFEF;
+}
+
+#popButton{
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.popLabel{
+//-fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 14px;
+}
+
+.boardTile{
+    -fx-cursor: crosshair;
+}
+
+.popScroll{
+    -fx-background:  #FFDFEF;
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane id="tabRight" fx:id="rightInfoTab" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="378.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXUI.RightInfo.RightController">
+  <tabs>
+    <Tab id="playersTab" fx:id="playerTab" text="Players">
+         <content>
+            <ScrollPane fx:id="playerScroll" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <GridPane id="playersGrid" fx:id="playerGrid" prefHeight="463.0" prefWidth="297.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="player1Name" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets top="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="player2Name" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                        <Label fx:id="player3Name" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                        <Label fx:id="player4Name" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Separator fx:id="sep00" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.valignment="BOTTOM" />
+                        <Separator fx:id="sep01" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                        <Separator fx:id="sep10" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+                        <Separator fx:id="sep02" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                        <Separator fx:id="sep12" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                        <Separator fx:id="sep11" prefHeight="2.0" prefWidth="173.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                        <ImageView fx:id="p1Img" fitHeight="68.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" />
+                        <ImageView fx:id="p2Img" fitHeight="68.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                        <ImageView fx:id="p4Img" fitHeight="68.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                        <ImageView fx:id="p3Img" fitHeight="68.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </content>
+    </Tab>
+    <Tab fx:id="unitTab" text="Unit Shop">
+         <content>
+            <ScrollPane fx:id="unitScroll" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <VBox id="unitShopV" fx:id="unitShopBox" prefHeight="469.0" prefWidth="304.0" spacing="10.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </content>
+    </Tab>
+      <Tab fx:id="myTerritoriesTab" text="My Territories">
+         <content>
+            <ScrollPane fx:id="TerritoryScroll" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <VBox id="myTerritoriesV" fx:id="territoryVbox" prefHeight="469.0" prefWidth="303.0" spacing="10.0">
+                     <padding>
+                        <Insets left="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </content>
+      </Tab>
+      <Tab fx:id="notificationsTab" text="Notifications">
+         <content>
+            <ScrollPane fx:id="notificationScroll" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <VBox id="notificationV" fx:id="notificationsBox" prefHeight="469.0" prefWidth="304.0" spacing="10.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </content>
+      </Tab>
+  </tabs>
+   <padding>
+      <Insets left="5.0" right="20.0" top="5.0" />
+   </padding>
+</TabPane>

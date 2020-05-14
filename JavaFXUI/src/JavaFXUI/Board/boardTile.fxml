@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="boardTile" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#chooseTerritoryOnAction" prefHeight="121.0" prefWidth="122.0" styleClass="boardTile" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXUI.BoardTile.BoardTileController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="267.0">
+         <children>
+            <Label fx:id="serial" />
+         </children>
+      </HBox>
+      <HBox fx:id="minMightBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label text="Might:" />
+            <Label fx:id="minMight" />
+         </children>
+      </HBox>
+      <HBox fx:id="rewardsBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label text="Rewards:" />
+            <Label fx:id="rewards" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

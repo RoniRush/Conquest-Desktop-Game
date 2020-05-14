@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="shopTile" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="263.0" spacing="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXUI.ShopTile.ShopTileController">
+   <children>
+      <VBox fx:id="unitNameBox" alignment="CENTER" prefHeight="100.0" prefWidth="56.0">
+         <children>
+            <Label fx:id="unitName">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="unitFinalBox" prefHeight="102.0" prefWidth="117.0">
+         <children>
+            <Label text="Rank:" />
+            <Label text="Unit Cost:" />
+            <Label text="Cost Per Single FP:" />
+            <Label text="Max FP:" />
+            <Label text="Fatigue Factor:" />
+            <Label text="Total on Board:" />
+         </children>
+         <HBox.margin>
+            <Insets top="10.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="unitModBox" alignment="TOP_CENTER" prefHeight="102.0" prefWidth="66.0">
+         <HBox.margin>
+            <Insets top="10.0" />
+         </HBox.margin>
+         <children>
+            <Label fx:id="rank" />
+            <Label fx:id="totalCost" />
+            <Label fx:id="costSingle" />
+            <Label fx:id="maxMight" />
+            <Label fx:id="fatigue" />
+            <Label fx:id="totalOnBoard" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</HBox>
